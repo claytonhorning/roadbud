@@ -4,8 +4,20 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Roadbud keeps you safe and informed on Colorado roads by providing CDOT Alerts, Community Posts, Live Video, Custom Alerts, and Trip Planner.">
+    <meta name="keywords" content="Roadbud, CDOT, Colorado, Roads">
+    <meta name="author" content="Roadbud">
     <title>Roadbud App</title>
     <link rel="stylesheet" href="./style.css" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-THF3QPR1TX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-THF3QPR1TX');
+    </script>
   </head>
   <body>
     <div class="hero-wrapper">
@@ -73,7 +85,7 @@
                   <div class="icon">
                     <svg
                       version="1.1"
-                      id="icon"
+                      id="icon"rm -rf .git
                       xmlns="http://www.w3.org/2000/svg"
                       xmlns:xlink="http://www.w3.org/1999/xlink"
                       x="0px"
@@ -389,8 +401,8 @@
     <section id="input-section">
         <h4 class="align-center">STAY TUNED</h4>
         <h3 class="development-text">Roadbud is currently in development. If you would like to know when we launch, please enter your email.</h3>
-        <form class="email-form">
-            <input type="text" class="email-input" placeholder="Enter your email">
+        <form method="POST" action="https://formspree.io/f/mwkyqkww" class="email-form">
+            <input required="true" name="email" type="text" class="email-input" placeholder="Enter your email">
             <button class="email-button" type="submit">Submit</button>  
         </form>
     </section>
@@ -456,7 +468,7 @@
 <g>
 </g>
 </svg> 
-        <p class="text-sm">clayton@nidusdigital.com</p>
+        <a class="mail-link" href="mailto:clayton@nidusdigital.com">clayton@nidusdigital.com</a>
         </div>
         <div class="divider"></div>
          <img id="logo-large" src="./img/logo-white.png"/>
