@@ -1,0 +1,341 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  min-height: 100%;
+  background: #fff;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+  font-family: Montserrat, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+p {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1.2em;
+  line-height: 1.4em;
+}
+h1 {
+  font-size: 3.5em;
+  margin: 0px 10px;
+}
+.nav-wrapper {
+  position: absolute;
+  top: 0;
+  margin: 20px;
+  background-color: transparent;
+}
+#logo {
+  height: 20px;
+}
+.container {
+  margin: 0 10em;
+}
+.hero-wrapper {
+  position: relative;
+  margin: 0;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(./img/road.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 650px;
+  padding: 10em 0;
+  color: #fff;
+}
+#curve {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+#mobile-curve {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+#mobile-curve circle {
+  fill: #fff;
+}
+#curve path {
+  fill: #fff;
+}
+.align-center {
+  text-align: center;
+}
+.responsive {
+  display: flex;
+  justify-content: space-between;
+  margin-top: -7em;
+}
+.icons {
+  display: flex;
+  margin-left: -25px;
+}
+#icon {
+  height: 20px;
+  width: 20px;
+  fill: #ff7a01;
+}
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+  height: 70px;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  margin: 10px 25px;
+  z-index: 1;
+}
+.icon-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.icon-row {
+  display: flex;
+}
+.icon-description {
+  font-size: 0.8em;
+  opacity: 0.5;
+  text-align: center;
+}
+.description-column {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+.apple-button {
+  width: 175px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.image-column {
+  z-index: 1;
+}
+#phone {
+  margin-top: -15em;
+  height: 700px;
+}
+#features-section {
+  margin-top: 100px;
+  padding: 50px 0px;
+  background-color: #000;
+  color: white;
+}
+.feature-row-start {
+  display: flex;
+  margin: 50px 0px;
+  justify-content: start;
+  width: 30%;
+}
+.feature-row-end {
+  display: flex;
+  justify-content: end;
+  margin-left: 70%;
+}
+.road-line {
+  margin-top: 40px;
+  border-left: 6px dashed #ff7a01;
+  height: 90%;
+  position: absolute;
+  left: 50%;
+  margin-left: -3px;
+}
+#feature-icon {
+  margin-right: 20px;
+  fill: white;
+  height: 25px;
+  width: 25px;
+}
+.row {
+  display: flex;
+}
+.col {
+  display: flex;
+  flex-direction: column;
+}
+#input-section {
+  margin-top: 50px;
+  margin-bottom: 80px;
+  background-color: #fff;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.development-text {
+  width: 50%;
+  padding: 0 15px;
+  margin: 40px 1em;
+  text-align: center;
+  border-radius: 25px;
+}
+.email-form {
+  position: relative;
+  width: 40%;
+}
+.email-input {
+  width: 100%;
+  border: none;
+  border-radius: 100px;
+  padding: 15px 100px 15px 20px;
+  outline: none;
+  font-size: 15px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.email-button {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+  border: 0;
+  background: #ff7a01;
+  color: #fff;
+  padding: 0 30px;
+  border-top-right-radius: 100px;
+  border-bottom-right-radius: 100px;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+}
+footer {
+  background-color: #000;
+  color: white;
+  padding: 0;
+}
+#footer {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.text-sm {
+  font-size: 15px;
+}
+.group {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0px;
+}
+#logo-large {
+  margin: 15px 0px;
+  height: 40px;
+}
+.divider {
+  width: 100%;
+  border-bottom: 1px solid rgb(222, 222, 222);
+}
+@media screen and (max-width: 1200px) {
+  .icon-row {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+  }
+  .icons {
+    display: block;
+  }
+  .container {
+    margin: 0 5em;
+  }
+  .responsive {
+    display: flex;
+    justify-content: space-between;
+    margin-top: -5em;
+  }
+}
+@media screen and (max-width: 900px) {
+  .road-line {
+    height: 120%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .hero-wrapper {
+    position: relative;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+      url(./img/road.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 650px;
+    padding: 5em 0;
+    color: #fff;
+  }
+  #curve {
+    display: none;
+  }
+  #mobile-curve {
+    display: block;
+  }
+  h1 {
+    font-size: 2.6em;
+  }
+  .responsive {
+    margin-top: -15px;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .icon-row {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+  }
+  .icons {
+    display: block;
+  }
+  .description-column {
+    text-align: center;
+    width: 100%;
+  }
+  .container {
+    margin: 0 2em;
+  }
+  .feature-row-start {
+    width: 40%;
+  }
+  .feature-row-end {
+    margin-left: 60%;
+  }
+  .road-line {
+    height: 100%;
+  }
+  .development-text {
+    width: 100%;
+  }
+  .email-form {
+    width: 80%;
+  }
+  #phone {
+    margin-top: -20em;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  #features-section {
+    margin-top: 50px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .road-line {
+    height: 130%;
+  }
+}
