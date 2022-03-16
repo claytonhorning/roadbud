@@ -123,6 +123,10 @@ h1 {
   margin-top: 10px;
   cursor: pointer;
 }
+.apple-button:hover {
+  transition: ease-in 0.3s;
+  width: 200px;
+}
 .image-column {
   z-index: 1;
 }
@@ -203,7 +207,7 @@ h1 {
   top: 0px;
   bottom: 0px;
   border: 0;
-  background: #ff7a01;
+  background-color: #ff7a01;
   color: #fff;
   padding: 0 30px;
   border-top-right-radius: 100px;
@@ -212,6 +216,10 @@ h1 {
     Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-weight: 500;
   cursor: pointer;
+}
+.email-button:hover {
+  background-color: #cd6707;
+  transition: ease-in-out 0.3s;
 }
 footer {
   background-color: #000;
@@ -254,6 +262,11 @@ footer {
 .mail-link:hover {
   color: #ff7a01;
   text-decoration: underline;
+}
+.email-us-text {
+  padding: 10px 15px;
+  font-size: 15px;
+  opacity: 0.8;
 }
 @media screen and (max-width: 1200px) {
   .icon-row {
@@ -344,6 +357,9 @@ footer {
   }
   #features-section {
     margin-top: 50px;
+  }
+  .email-us-text {
+    text-align: center;
   }
 }
 @media screen and (max-width: 600px) {
