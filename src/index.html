@@ -10,6 +10,11 @@
 
       gtag('config', 'G-THF3QPR1TX');
     </script>
+    <script>
+      function submitForm() {
+        alert("Thanks for submitting your email!");
+      }
+    </script>
     <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -422,9 +427,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <section id="input-section">
         <h4 class="align-center">STAY TUNED</h4>
         <h3 class="development-text">Roadbud is currently in development. If you would like to know when we launch, please enter your email.</h3>
-        <form method="POST" action="https://formspree.io/f/mbjwkpbz" class="email-form">
-            <input required="true" name="email" type="text" class="email-input" placeholder="Enter your email">
-            <button class="email-button" type="submit">Submit</button>  
+        <form method="POST" action="http://137.184.83.41/emailSubscription" class="email-form" target="emailSubscription" id="emailForm">
+            <input required="true" name="email" type="text" class="email-input" placeholder="Enter your email" id="emailInput">
+            <button class="email-button" type="submit" onclick="submitForm()">Submit</button>  
         </form>
         <p class="email-us-text">If you have suggestions or have a feature request please shoot us an email! 😄</p>
     </section>
@@ -498,4 +503,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
          <img id="logo-large" alt="Roadbud Logo" src="./img/logo-white.png"/>
          </div>
     </footer>
+    <iframe name="emailSubscription" id="emailSubscription" style="display: none;"></iframe>
+
 </html>
