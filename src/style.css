@@ -191,6 +191,8 @@ h1 {
 .email-form {
   position: relative;
   width: 40%;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 100px;
 }
 .email-input {
   width: 100%;
@@ -199,7 +201,6 @@ h1 {
   padding: 15px 100px 15px 20px;
   outline: none;
   font-size: 15px;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 .email-button {
   position: absolute;
